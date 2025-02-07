@@ -1,0 +1,63 @@
+# Management System API
+
+## Übersicht
+Dieses Projekt ist eine .NET WebAPI-Anwendung, die nach dem Prinzip der Clean Architecture aufgebaut ist. Ziel ist es, eine robuste und skalierbare Architektur für das Management-System bereitzustellen.
+
+## Projektstruktur
+Die Projektstruktur ist in verschiedene Ebenen unterteilt, um eine klare Trennung der Verantwortlichkeiten zu gewährleisten:
+
+├───request
+│   ├───Authentication
+│   └───Department
+├───src
+│   ├───Management.Api
+│   │   ├───Extensions
+│   │   └───Groups
+│   ├───Management.Application
+│   │   └───Services
+│   │       ├───Authentication
+│   │       ├───DepartmentMediatorService
+│   │       └───JWTService
+│   ├───Management.Core
+│   │   ├───Interfaces
+│   │   │   ├───DepartmentInterfaces
+│   │   │   │   └───RepositoryInterfaces
+│   │   │   └───JWT
+│   │   ├───Models
+│   │   │   ├───Authentication
+│   │   │   └───DepartmentModels
+│   │   │       ├───Datenbank
+│   │   │       └───DepartmentMediator
+│   │   │           ├───Command
+│   │   │           ├───Queries
+│   │   │           └───Responses
+│   ├───Management.Infrastructure
+│   │   ├───Authentication
+│   │   ├───Data
+│   │   ├───Migrations
+│   │   └───Repositories
+│   │       └───SettingsRepository
+│   ├───Management.Infrastructure.Department
+│   │   ├───Data
+│   │   ├───Migrations
+│   │   └───Repositories
+│   │       └───DepartmentRepositories
+│   └───Management.Infrastructure.Energy
+└───test
+    ├───IntegrationTests
+    │   ├───Management.Api.IntegrationTests
+    │   │   └───Groups
+    │   │       └───GroupDepartmentTests
+    │   ├───Management.Application.IntegrationTests
+    │   │   └───Services
+    │   │       ├───DepartmentCommandHandlerTests
+    │   │       └───DepartmentQueryHandlerTests
+    │   └───Management.Infrastructure.Department.IntegrationTests
+    │       ├───Helpers
+    │       └───Repositories
+    │           └───Department
+    └───UnitTests
+        └───Management.Infrastructure.Department.UnitTests
+            ├───Helpers
+            └───Repositories
+                └───Department
