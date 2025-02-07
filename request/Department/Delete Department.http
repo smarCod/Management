@@ -1,0 +1,8 @@
+
+
+
+
+@host=http://localhost:5252
+
+DELETE {{host}}/v1/department/deletedepartment/5
+Content-Type: application/json

@@ -1,0 +1,7 @@
+
+
+
+@host=http://localhost:5252
+
+POST {{host}}/addrollen
+Content-Type: application/json

@@ -1,0 +1,13 @@
+
+
+
+
+@host=http://localhost:5252
+@name=Department 16
+
+POST {{host}}/v1/department/postdepartment/{{name}}
+Content-Type: application/json
+
+{
+    "name": "{{name}}"
+}

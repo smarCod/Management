@@ -1,0 +1,7 @@
+
+
+
+@host=http://localhost:5252
+
+GET {{host}}/v1/department/getalldepartments/
+Content-Type: application/json

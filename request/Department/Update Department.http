@@ -1,0 +1,11 @@
+
+
+
+
+
+@host=http://localhost:5252
+@id=4
+@name=Department 444
+
+PUT {{host}}/v1/department/updatedepartment/{{id}}/{{name}}
+Content-Type: application/json

@@ -1,0 +1,10 @@
+
+
+
+
+
+@host=http://localhost:5252
+
+GET {{host}}/v1/department/getdepartmentbyid/6
+Content-Type: application/json
+

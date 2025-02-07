@@ -1,0 +1,13 @@
+
+
+
+
+@host=http://localhost:5252
+
+POST {{host}}/addroletouser
+Content-Type: application/json
+
+{
+    "email": "seb@g.de42",
+    "role": "Admin"
+}
