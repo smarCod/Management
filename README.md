@@ -5,7 +5,7 @@ Dieses Projekt ist eine .NET WebAPI-Anwendung, die nach dem Prinzip der Clean Ar
 
 ## Projektstruktur
 Die Projektstruktur ist in verschiedene Ebenen unterteilt, um eine klare Trennung der Verantwortlichkeiten zu gewährleisten:
-
+```bash
 ├───request
 │   ├───Authentication
 │   └───Department
